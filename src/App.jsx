@@ -15,7 +15,10 @@ import {
   Target,
   Plane,
   Menu,
-  X
+  X,
+  Instagram,
+  Youtube,
+  TikTok
 } from 'lucide-react';
 
 // Importación de imágenes locales
@@ -628,20 +631,33 @@ const App = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-10 font-black text-slate-500">
-              <a href="https://www.instagram.com/solugansg/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors uppercase text-[10px] tracking-[0.25em]">Instagram</a>
-              <a href="https://www.youtube.com/@solugansgsolucionesganader2115" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors uppercase text-[10px] tracking-[0.25em]">YouTube</a>
-              <a href="https://www.tiktok.com/@solugan_sg" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors uppercase text-[10px] tracking-[0.25em]">TikTok</a>
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+              <a href="https://www.instagram.com/solugansg/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors" title="Instagram">
+                <Instagram size={40} />
+              </a>
+              <a href="https://www.youtube.com/@solugansgsolucionesganader2115" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors" title="YouTube">
+                <Youtube size={40} />
+              </a>
+              <a href="https://www.tiktok.com/@solugan_sg" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors" title="TikTok">
+                <TikTok size={40} />
+              </a>
             </div>
           </div>
 
           <div className="mt-12 text-center text-slate-600 text-[10px] font-bold">
             <p className="mb-2 uppercase tracking-widest opacity-50">Solugan SG - Asesoría Profesional por Jan Alexander González</p>
-            <p className="opacity-30 tracking-tight uppercase mb-6">© 2024 Todos los derechos reservados. Diseñado para Ganaderos de Resultados.</p>
+            <p className="opacity-30 tracking-tight uppercase mb-6">© 2026 Todos los derechos reservados. Diseñado para Ganaderos de Resultados.</p>
 
-            <div className="flex items-center justify-center gap-3 pt-6 border-t border-slate-800">
-              <span className="text-slate-500 text-[9px] uppercase tracking-wider">Desarrollado por</span>
-              <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-6 object-contain" />
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-6 border-t border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="text-slate-500 text-[9px] uppercase tracking-wider">Desarrollado por</span>
+                <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-6 object-contain" />
+              </div>
+              <span className="text-slate-600 text-[9px] hidden md:inline">|</span>
+              <a href="https://www.dmentedigital.co" target="_blank" rel="noopener noreferrer" className="text-slate-500 text-[9px] uppercase tracking-wider hover:text-blue-400 transition-colors">www.dmentedigital.co</a>
+            </div>
+
+            <p className="mt-4 text-slate-700 italic text-[9px] tracking-wider">No es azar, es propósito.</p>
             </div>
           </div>
         </div>
