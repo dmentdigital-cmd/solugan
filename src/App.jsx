@@ -24,7 +24,6 @@ import {
 // Importación de imágenes locales
 import janImage from './assets/products/Jan1.jpg';
 import catalogoImg from './assets/products/Catalogo.png';
-import logo from '../public/logo-solugan.webp';
 import dmenteLogo from '../public/dmente-logo.png';
 
 // Imágenes de productos
@@ -624,7 +623,7 @@ const App = () => {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12 pb-12 border-b border-slate-800">
             <div className="flex items-center gap-4">
-              <img src={logo} alt="Solugan SG Logo" className="w-20 h-20 object-contain" />
+              <img src="/logo-solugan.webp" alt="Solugan SG Logo" className="w-20 h-20 object-contain" />
               <div className="text-left">
                 <span className="font-black text-2xl tracking-tighter block leading-none uppercase tracking-tight">SOLUGAN SG</span>
                 <span className="text-red-500 text-[10px] font-black uppercase tracking-[0.2em] mt-2 block opacity-80 uppercase leading-none">Tecnificación Ganadera de Precisión</span>
@@ -648,16 +647,15 @@ const App = () => {
             <p className="mb-2 uppercase tracking-widest opacity-50">Solugan SG - Asesoría Profesional por Jan Alexander González</p>
             <p className="opacity-30 tracking-tight uppercase mb-6">© 2026 Todos los derechos reservados. Diseñado para Ganaderos de Resultados.</p>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-6 border-t border-slate-800">
+            <div className="flex flex-col items-center justify-center gap-3 pt-8 border-t border-slate-800">
               <div className="flex items-center gap-2">
-                <span className="text-slate-500 text-[9px] uppercase tracking-wider">Desarrollado por</span>
-                <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-6 object-contain" />
+                <span className="text-slate-500 text-[9px] uppercase tracking-wider font-bold">Desarrollado por</span>
+                <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-8 object-contain" />
               </div>
-              <span className="text-slate-600 text-[9px] hidden md:inline">|</span>
-              <a href="https://www.dmentedigital.co" target="_blank" rel="noopener noreferrer" className="text-slate-500 text-[9px] uppercase tracking-wider hover:text-blue-400 transition-colors">www.dmentedigital.co</a>
+              <p className="text-slate-600 text-[9px] tracking-wider">Estrategia Digital • Tecnología • Marketing</p>
+              <p className="text-slate-700 italic text-[9px] tracking-wider font-semibold">No es azar, es propósito.</p>
+              <a href="https://www.dmentedigital.co" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-[10px] uppercase tracking-wider hover:text-blue-300 transition-colors font-bold mt-2">www.dmentedigital.co</a>
             </div>
-
-            <p className="mt-4 text-slate-700 italic text-[9px] tracking-wider">No es azar, es propósito.</p>
             </div>
           </div>
         </div>
