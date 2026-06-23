@@ -655,7 +655,6 @@ const App = () => {
               <p className="text-slate-700 italic text-[9px] tracking-wider font-semibold">No es azar, es propósito.</p>
               <a href="https://www.dmentedigital.co" target="_blank" rel="noopener noreferrer" className="text-blue-400 text-[10px] uppercase tracking-wider hover:text-blue-300 transition-colors font-bold mt-2">www.dmentedigital.co</a>
             </div>
-            </div>
           </div>
         </div>
       </footer>
