@@ -21,7 +21,8 @@ import {
 // Importación de imágenes locales
 import janImage from './assets/products/Jan1.jpg';
 import catalogoImg from './assets/products/Catalogo.png';
-import logo from './assets/LOGOSOLUGAN.webp';
+import logo from '../public/logo-solugan.webp';
+import dmenteLogo from '../public/dmente-logo.png';
 
 // Imágenes de productos
 import basculaEW7i from './assets/products/Bascula EW7i.png';
@@ -620,7 +621,7 @@ const App = () => {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12 pb-12 border-b border-slate-800">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center text-white font-black text-3xl shadow-xl">SG</div>
+              <img src={logo} alt="Solugan SG Logo" className="w-20 h-20 object-contain" />
               <div className="text-left">
                 <span className="font-black text-2xl tracking-tighter block leading-none uppercase tracking-tight">SOLUGAN SG</span>
                 <span className="text-red-500 text-[10px] font-black uppercase tracking-[0.2em] mt-2 block opacity-80 uppercase leading-none">Tecnificación Ganadera de Precisión</span>
@@ -628,15 +629,20 @@ const App = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-10 font-black text-slate-500">
-              {['Facebook', 'Instagram', 'TikTok', 'YouTube'].map((social) => (
-                <a key={social} href="#" className="hover:text-red-500 transition-colors uppercase text-[10px] tracking-[0.25em]">{social}</a>
-              ))}
+              <a href="https://www.instagram.com/solugansg/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors uppercase text-[10px] tracking-[0.25em]">Instagram</a>
+              <a href="https://www.youtube.com/@solugansgsolucionesganader2115" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors uppercase text-[10px] tracking-[0.25em]">YouTube</a>
+              <a href="https://www.tiktok.com/@solugan_sg" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors uppercase text-[10px] tracking-[0.25em]">TikTok</a>
             </div>
           </div>
 
           <div className="mt-12 text-center text-slate-600 text-[10px] font-bold">
             <p className="mb-2 uppercase tracking-widest opacity-50">Solugan SG - Asesoría Profesional por Jan Alexander González</p>
-            <p className="opacity-30 tracking-tight uppercase">© 2024 Todos los derechos reservados. Diseñado para Ganaderos de Resultados.</p>
+            <p className="opacity-30 tracking-tight uppercase mb-6">© 2024 Todos los derechos reservados. Diseñado para Ganaderos de Resultados.</p>
+
+            <div className="flex items-center justify-center gap-3 pt-6 border-t border-slate-800">
+              <span className="text-slate-500 text-[9px] uppercase tracking-wider">Desarrollado por</span>
+              <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-6 object-contain" />
+            </div>
           </div>
         </div>
       </footer>
