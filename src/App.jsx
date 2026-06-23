@@ -24,7 +24,6 @@ import {
 // Importación de imágenes locales
 import janImage from './assets/products/Jan1.jpg';
 import catalogoImg from './assets/products/Catalogo.png';
-import dmenteLogo from '../public/dmente-logo.png';
 
 // Imágenes de productos
 import basculaEW7i from './assets/products/Bascula EW7i.png';
@@ -650,7 +649,7 @@ const App = () => {
             <div className="flex flex-col items-center justify-center gap-3 pt-8 border-t border-slate-800">
               <div className="flex items-center gap-2">
                 <span className="text-slate-500 text-[9px] uppercase tracking-wider font-bold">Desarrollado por</span>
-                <img src={dmenteLogo} alt="Dmente Digital Logo" className="h-8 object-contain" />
+                <img src="/dmente-logo.png" alt="Dmente Digital Logo" className="h-8 object-contain" />
               </div>
               <p className="text-slate-600 text-[9px] tracking-wider">Estrategia Digital • Tecnología • Marketing</p>
               <p className="text-slate-700 italic text-[9px] tracking-wider font-semibold">No es azar, es propósito.</p>
