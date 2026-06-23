@@ -242,6 +242,86 @@ const App = () => {
         </div>
       </section>
 
+      {/* AI for Livestock Section */}
+      <section className="py-24 xl:py-32 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -mr-48 -mt-48" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl -ml-48 -mb-48" />
+          <div className="absolute inset-0 flex items-center justify-center z-5 opacity-20">
+            <span className="text-9xl xl:text-[200px] font-black uppercase tracking-tighter text-white/30 text-center leading-none select-none pointer-events-none">Inteligencia Artificial Aplicada a la Ganadería</span>
+          </div>
+        </div>
+
+        <div className="container mx-auto max-w-7xl px-4 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 bg-blue-600/90 backdrop-blur-sm px-4 py-1.5 rounded-full mb-6 border border-blue-400/30 shadow-lg">
+              <Microscope size={18} />
+              <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Inteligencia Artificial en Ganadería</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl xl:text-7xl font-black mb-6 uppercase tracking-tighter">
+              Solugan: Referente de <span className="text-blue-400">IA Aplicada</span> en Ganadería
+            </h2>
+            <p className="text-slate-300 text-lg xl:text-2xl max-w-4xl mx-auto font-light leading-relaxed">
+              Desarrollamos soluciones inteligentes utilizando los modelos de frontera más avanzados y la tecnología más reciente para optimizar cada aspecto de su operación ganadera.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* IATF Pro App */}
+            <a
+              href="https://iatf-pro-by-solugan-sg.vercel.app/"
+              target="_blank" rel="noopener noreferrer"
+              className="group p-10 xl:p-12 rounded-3xl border border-blue-500/30 bg-gradient-to-br from-blue-900/40 via-slate-800/40 to-slate-900/60 hover:border-blue-400/60 transition-all hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col h-full"
+            >
+              <div className="flex-grow">
+                <div className="inline-block mb-6 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/50">
+                  <span className="text-blue-300 text-sm font-bold uppercase tracking-wider">Reproducción Inteligente</span>
+                </div>
+                <h3 className="text-3xl xl:text-4xl font-black mb-5 uppercase tracking-tight group-hover:text-blue-300 transition-colors">
+                  IATF Pro
+                </h3>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6 font-light">
+                  Plataforma IA para inseminación artificial a tiempo fijo. Predicción de ciclos, optimización de protocolos y resultados en tiempo real.
+                </p>
+              </div>
+              <div className="flex items-center gap-3 text-blue-400 font-bold group-hover:gap-5 transition-all">
+                <span>Acceder a IATF Pro</span>
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
+
+            {/* BovSal Control Pro App */}
+            <a
+              href="https://bovisal-control-pro.vercel.app/"
+              target="_blank" rel="noopener noreferrer"
+              className="group p-10 xl:p-12 rounded-3xl border border-cyan-500/30 bg-gradient-to-br from-cyan-900/40 via-slate-800/40 to-slate-900/60 hover:border-cyan-400/60 transition-all hover:shadow-2xl hover:shadow-cyan-500/20 flex flex-col h-full"
+            >
+              <div className="flex-grow">
+                <div className="inline-block mb-6 px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-400/50">
+                  <span className="text-cyan-300 text-sm font-bold uppercase tracking-wider">Control Nutricional</span>
+                </div>
+                <h3 className="text-3xl xl:text-4xl font-black mb-5 uppercase tracking-tight group-hover:text-cyan-300 transition-colors">
+                  BovSal Control Pro
+                </h3>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6 font-light">
+                  Gestión inteligente de nutrición bovina. Análisis de mineralizacion, salud ruminal y rendimiento productivo con IA predictiva.
+                </p>
+              </div>
+              <div className="flex items-center gap-3 text-cyan-400 font-bold group-hover:gap-5 transition-all">
+                <span>Acceder a BovSal Control Pro</span>
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
+          </div>
+
+          <div className="mt-16 p-10 xl:p-12 rounded-3xl bg-gradient-to-r from-blue-900/30 via-slate-800/30 to-cyan-900/30 border border-blue-500/20 backdrop-blur-sm">
+            <p className="text-center text-slate-200 text-lg xl:text-xl leading-relaxed">
+              <span className="font-bold text-blue-300">Desarrollado con tecnología de vanguardia:</span> Nuestras aplicaciones utilizan modelos de inteligencia artificial de frontera y algoritmos avanzados para transformar datos en decisiones estratégicas que multiplican su rentabilidad ganadera.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Pain Points Section */}
       <section className="py-24 lg:py-32 bg-white text-slate-900">
         <div className="container mx-auto max-w-[1400px] px-4">
@@ -340,83 +420,6 @@ const App = () => {
             </div>
           ))}
         </div>
-
-      {/* AI for Livestock Section */}
-      <section className="py-24 xl:py-32 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-30">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -mr-48 -mt-48" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl -ml-48 -mb-48" />
-        </div>
-
-        <div className="container mx-auto max-w-7xl px-4 relative z-10">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-blue-600/90 backdrop-blur-sm px-4 py-1.5 rounded-full mb-6 border border-blue-400/30 shadow-lg">
-              <Microscope size={18} />
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Inteligencia Artificial en Ganadería</span>
-            </div>
-            <h2 className="text-4xl md:text-6xl xl:text-7xl font-black mb-6 uppercase tracking-tighter">
-              Solugan: Referente de <span className="text-blue-400">IA Aplicada</span> en Ganadería
-            </h2>
-            <p className="text-slate-300 text-lg xl:text-2xl max-w-4xl mx-auto font-light leading-relaxed">
-              Desarrollamos soluciones inteligentes utilizando los modelos de frontera más avanzados y la tecnología más reciente para optimizar cada aspecto de su operación ganadera.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-            {/* IATF Pro App */}
-            <a
-              href="https://iatf-pro-by-solugan-sg.vercel.app/"
-              target="_blank" rel="noopener noreferrer"
-              className="group p-10 xl:p-12 rounded-3xl border border-blue-500/30 bg-gradient-to-br from-blue-900/40 via-slate-800/40 to-slate-900/60 hover:border-blue-400/60 transition-all hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col h-full"
-            >
-              <div className="flex-grow">
-                <div className="inline-block mb-6 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/50">
-                  <span className="text-blue-300 text-sm font-bold uppercase tracking-wider">Reproducción Inteligente</span>
-                </div>
-                <h3 className="text-3xl xl:text-4xl font-black mb-5 uppercase tracking-tight group-hover:text-blue-300 transition-colors">
-                  IATF Pro
-                </h3>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6 font-light">
-                  Plataforma IA para inseminación artificial a tiempo fijo. Predicción de ciclos, optimización de protocolos y resultados en tiempo real.
-                </p>
-              </div>
-              <div className="flex items-center gap-3 text-blue-400 font-bold group-hover:gap-5 transition-all">
-                <span>Acceder a IATF Pro</span>
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </div>
-            </a>
-
-            {/* BovSal Control Pro App */}
-            <a
-              href="https://bovisal-control-pro.vercel.app/"
-              target="_blank" rel="noopener noreferrer"
-              className="group p-10 xl:p-12 rounded-3xl border border-cyan-500/30 bg-gradient-to-br from-cyan-900/40 via-slate-800/40 to-slate-900/60 hover:border-cyan-400/60 transition-all hover:shadow-2xl hover:shadow-cyan-500/20 flex flex-col h-full"
-            >
-              <div className="flex-grow">
-                <div className="inline-block mb-6 px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-400/50">
-                  <span className="text-cyan-300 text-sm font-bold uppercase tracking-wider">Control Nutricional</span>
-                </div>
-                <h3 className="text-3xl xl:text-4xl font-black mb-5 uppercase tracking-tight group-hover:text-cyan-300 transition-colors">
-                  BovSal Control Pro
-                </h3>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6 font-light">
-                  Gestión inteligente de nutrición bovina. Análisis de mineralizacion, salud ruminal y rendimiento productivo con IA predictiva.
-                </p>
-              </div>
-              <div className="flex items-center gap-3 text-cyan-400 font-bold group-hover:gap-5 transition-all">
-                <span>Acceder a BovSal Control Pro</span>
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </div>
-            </a>
-          </div>
-
-          <div className="mt-16 p-10 xl:p-12 rounded-3xl bg-gradient-to-r from-blue-900/30 via-slate-800/30 to-cyan-900/30 border border-blue-500/20 backdrop-blur-sm">
-            <p className="text-center text-slate-200 text-lg xl:text-xl leading-relaxed">
-              <span className="font-bold text-blue-300">Desarrollado con tecnología de vanguardia:</span> Nuestras aplicaciones utilizan modelos de inteligencia artificial de frontera y algoritmos avanzados para transformar datos en decisiones estratégicas que multiplican su rentabilidad ganadera.
-            </p>
-          </div>
-        </div>
-      </section>
 
         {/* New Tienda Section */}
         <div id="tienda" className="container mx-auto max-w-[1500px] px-4 mt-32 lg:mt-48">
