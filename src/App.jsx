@@ -119,7 +119,7 @@ const App = () => {
         <div className="container mx-auto max-w-7xl px-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img
-              src={logo}
+              src="/logo-solugan.webp"
               alt="Solugan SG Logo"
               className="h-10 md:h-12 w-auto object-contain"
             />
